@@ -1,51 +1,49 @@
 document.addEventListener('DOMContentLoaded', () => {
-    const maxId = 151;
-    const id = Math.floor(Math.random() * maxId) + 1;
-    const url = `https://pokeapi.co/api/v2/pokemon/${id}/`;
-
+    const maxId = 220;
     const img = document.getElementById('pokemonimg');
+    const typeText = document.getElementById('pokemon-type');
+    const refreshButtons = document.querySelectorAll('.boton');
 
-    fetch(url)
-        .then(response => {
-            if (!response.ok) throw new Error('salio mal :v');
-            return response.json();
-        })
-        .then(pokemon => {
-            const sprite = pokemon.sprites && pokemon.sprites.front_default;
-            if (sprite && img) {
+    const getRandomPokemonId = () => Math.floor(Math.random() * maxId) + 1;
+
+    const renderPokemon = pokemon => {
+        const sprite = pokemon.sprites?.front_default;
+        const types = pokemon.types?.map(typeInfo => typeInfo.type.name) || [];
+
+        if (img) {
+            if (sprite) {
                 img.src = sprite;
-            } else if (img) {
+                img.alt = pokemon.name || 'Pokemon';
+            } else {
+                img.src = '';
                 img.alt = 'Sprite no disponible :,u';
             }
-        })
-        .catch(error => {
-            console.error('Error al cargar Pokémon:', error);
-        });
-});
+        }
 
-document.addEventListener("DOMContentLoaded", function() {
-    document.getElementById("boton").addEventListener("click", function () { 
-    const maxId = 151;
-    const id = Math.floor(Math.random() * maxId) + 1;
-    const url = `https://pokeapi.co/api/v2/pokemon/${id}/`;
+        if (typeText) {
+            typeText.textContent = types.length
+                ? `Tipo${types.length > 1 ? 's' : ''}: ${types.join(' / ')}`
+                : 'Tipo no disponible xd';
+        }
+    };
 
-    const img = document.getElementById('pokemonimg');
+    const fetchPokemon = () => {
+        const id = getRandomPokemonId();
+        const url = `https://pokeapi.co/api/v2/pokemon/${id}/`;
 
-    fetch(url)
-        .then(response => {
-            if (!response.ok) throw new Error('salio mal :v');
-            return response.json();
-        })
-        .then(pokemon => {
-            const sprite = pokemon.sprites && pokemon.sprites.front_default;
-            if (sprite && img) {
-                img.src = sprite;
-            } else if (img) {
-                img.alt = 'Sprite no disponible :,u';
-            }
-        })
-        .catch(error => {
-            console.error('Error al cargar Pokémon:', error);
-        });
-        });
-});
+        fetch(url)
+            .then(response => {
+                if (!response.ok) throw new Error('salio mal :v');
+                return response.json();
+            })
+            .then(renderPokemon)
+            .catch(error => {
+                console.error('Error al cargar Pokémon :v', error);
+            });
+    };
+
+    fetchPokemon();
+
+    refreshButtons.forEach(document.getElementById("boton") 
+        Image.addEventListener('click', fetchPokemon);
+    });

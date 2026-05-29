@@ -18,23 +18,20 @@ body {
 }
 
 #pokemonimg {
-    width: 200%;
+    width: 192px;
     height: auto;
     margin: 15px
 }
 
-button {
+#boton {
     border: none;
-    background: #6366f1;
-    color: white;
     padding: 15px 30px;
-    border-radius: 40px;
     cursor: pointer;
-    transition: transform 0.2s ease, background 0.2s ease;
-    margin: 10px;
+    width: 200px;
+    height: auto;
+
 }
 
-button:hover {
+#boton:hover {
     transform: translateY(-2px);
-    background: #4f46e5;
 }
