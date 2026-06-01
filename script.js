@@ -1,13 +1,19 @@
 document.addEventListener('DOMContentLoaded', () => {
-    const maxId = 220;
+    const maxId = 1025;
     const img = document.getElementById('pokemonimg');
     const typeText = document.getElementById('pokemon-type');
-    const refreshButtons = document.querySelectorAll('.boton');
+   const refreshButtons = document.querySelectorAll('.boton');
+   const txtTurnos = document.getElementById('contador-turnos');
+
+   let turnos= 0;
+    let aciertos = 0;
+    let fallos = 0;
 
     const getRandomPokemonId = () => Math.floor(Math.random() * maxId) + 1;
 
     const renderPokemon = pokemon => {
         const sprite = pokemon.sprites?.front_default;
+        const name = pokemon.name || 'Desconocido';
         const types = pokemon.types?.map(typeInfo => typeInfo.type.name) || [];
 
         if (img) {
@@ -20,6 +26,10 @@ document.addEventListener('DOMContentLoaded', () => {
             }
         }
 
+        if (name) {
+        name.textContent = name.toUpperCase(); 
+        }
+        
         if (typeText) {
             typeText.textContent = types.length
                 ? `Tipo${types.length > 1 ? 's' : ''}: ${types.join(' / ')}`
@@ -42,8 +52,36 @@ document.addEventListener('DOMContentLoaded', () => {
             });
     };
 
+   
+    const procesarTurno = (botonId) => {
+
+        if (botonId === 'botonreal') {
+            aciertos++;
+        } else if (botonId === 'botonfalso') {
+            fallos++;
+        }
+        turnos++;
+        if (txtTurnos) {
+            txtTurnos.textContent = `10/${turnos}`;
+        }
+        if (turnos > 10) {
+       
+            localStorage.setItem('aciertos', aciertos);
+            localStorage.setItem('fallos', fallos);
+
+        
+            window.location.href = 'resultados.html';
+        } else {
+    
+            fetchPokemon();
+        }
+    };
+
     fetchPokemon();
 
-    refreshButtons.forEach(document.getElementById("boton") 
-        Image.addEventListener('click', fetchPokemon);
+   refreshButtons.forEach(boton => {
+    boton.addEventListener('click', () => {
+        procesarTurno(boton.id); 
     });
+});
+});
