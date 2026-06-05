@@ -64,7 +64,7 @@ document.addEventListener('DOMContentLoaded', () => {
         if (txtTurnos) {
             txtTurnos.textContent = `10/${turnos}`;
         }
-        if (turnos > 10) {
+        if (turnos >= 10) {
        
             localStorage.setItem('aciertos', aciertos);
             localStorage.setItem('fallos', fallos);

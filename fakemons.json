@@ -1,0 +1,133 @@
+[
+
+{
+    "sprite": ".img/flowersent" ,
+    "tipo": "grass / fairy"
+}  ,
+
+{
+    "sprite": ".img/froaggit" ,
+    "tipo": "ghost / water"
+} , 
+
+{
+    "sprite": ".img/galician sneasler" ,
+    "tipo": "steel / fighting"
+}  ,
+
+{
+    "sprite": ".img/kabupult" ,
+    "tipo": "rock / dragon"
+} , 
+
+{
+    "sprite": ".img/larxew" ,
+    "tipo": "ground / dragon"
+}  ,
+
+{
+    "sprite": ".img/magmarola" ,
+    "tipo": "fire / rock"
+} , 
+ 
+{
+    "sprite": ".img/markian" ,
+    "tipo": "flying / fighting"
+}  ,
+
+{
+    "sprite": ".img/mikuceon" ,
+    "tipo": "ice / normal"
+} , 
+ 
+{
+    "sprite": ".img/ursaspring" ,
+    "tipo": "dark / steel"
+}  ,
+
+{
+    "sprite": ".img/omarith" ,
+    "tipo": "rock / bug"
+} , 
+ 
+{
+    "sprite": ".img/pupxur" ,
+    "tipo": "rock / dragon"
+}  ,
+
+{
+    "sprite": ".img/rookided" ,
+    "tipo": "flying / normal"
+} , 
+ 
+{
+    "sprite": ".img/sandiles" ,
+    "tipo": "ground / dark"
+}  ,
+
+{
+    "sprite": ".img/scarysolt" ,
+    "tipo": "ghost / rock"
+} , 
+ 
+{
+    "sprite": ".img/stargoro" ,
+    "tipo": "ghost / fighting"
+}  ,
+
+{
+    "sprite": ".img/sunflower" ,
+    "tipo": "grass"
+} , 
+ 
+{
+    "sprite": ".img/tyraxorus" ,
+    "tipo": "dark / dragon"
+}  ,
+
+{
+    "sprite": ".img/urosaur" ,
+    "tipo": "grass / dark"
+} , 
+ 
+{
+    "sprite": ".img/watermeleon" ,
+    "tipo": "water"
+}  ,
+
+{
+    "sprite": ".img/yamarionette" ,
+    "tipo": "ghost"
+} , 
+ 
+{
+    "sprite": ".img/kinturne" ,
+    "tipo": "grass / fire"
+}  ,
+
+{
+    "sprite": ".img/flamingo" ,
+    "tipo": "flying / fighting"
+} , 
+ 
+{
+    "sprite": ".img/pikocho" ,
+    "tipo": "ghost"
+}  ,
+
+{
+    "sprite": ".img/digital rotom" ,
+    "tipo": "electric / steel"
+} , 
+ 
+{
+    "sprite": ".img/hisari" ,
+    "tipo": "ghost / dark"
+} ,
+
+{
+    "sprite": ".img/mineko" ,
+    "tipo": "normal"
+} 
+
+]
