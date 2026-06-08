@@ -34,14 +34,14 @@ body {
     margin: 15px
 }
 
-#boton {
+.boton {
     border: none;
-    padding: 15px 30px;
     cursor: pointer;
     width: 200px;
     height: auto;
+    margin: 50px;
 }
 
-#boton:hover {
+.boton:hover {
     transform: translateY(-2px);
 }

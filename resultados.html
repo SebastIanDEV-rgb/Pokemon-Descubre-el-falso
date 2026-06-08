@@ -14,8 +14,26 @@
     <p>Aciertos: <span id="total-aciertos">0</span></p>
     <p>Fallos: <span id="total-fallos">0</span></p>
 
-    <a href="index.html"><img id="boton" src="./img/jugar de nuevo.png" alt="jugar de nuevo"></a>
+    <a href="index.html"><img class="boton" src="./img/jugar de nuevo.png" alt="jugar de nuevo"></a>
+   
+    <script>
+    document.addEventListener('DOMContentLoaded', () => {
 
+    const txtAciertos = document.getElementById('total-aciertos');
+    const txtFallos = document.getElementById('total-fallos');
+
+    const aciertosGuardados = localStorage.getItem('aciertos') || '0';
+    const fallosGuardados = localStorage.getItem('fallos') || '0';
+
+    if (txtAciertos) {
+        txtAciertos.textContent = aciertosGuardados;
+    }
+    
+    if (txtFallos) {
+        txtFallos.textContent = fallosGuardados;
+    }
+    });
+    </script>
 
 </body>
 </html>

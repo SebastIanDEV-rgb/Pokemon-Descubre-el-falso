@@ -1,133 +1,135 @@
 [
 
 {
-    "sprite": ".img/flowersent" ,
+    "sprite": "img/flowersent.png" ,
     "tipo": "grass / fairy"
 }  ,
 
 {
-    "sprite": ".img/froaggit" ,
+    "sprite": "img/froaggit.png" ,
     "tipo": "ghost / water"
 } , 
 
 {
-    "sprite": ".img/galician sneasler" ,
+    "sprite": "img/galician sneasler.png" ,
     "tipo": "steel / fighting"
 }  ,
 
 {
-    "sprite": ".img/kabupult" ,
+    "sprite": "img/kabupult.png" ,
     "tipo": "rock / dragon"
 } , 
 
 {
-    "sprite": ".img/larxew" ,
+    "sprite": "img/larxew.png" ,
     "tipo": "ground / dragon"
 }  ,
 
 {
-    "sprite": ".img/magmarola" ,
+    "sprite": "img/magmarola.png" ,
     "tipo": "fire / rock"
 } , 
  
 {
-    "sprite": ".img/markian" ,
+    "sprite": "img/markian.png" ,
     "tipo": "flying / fighting"
 }  ,
 
 {
-    "sprite": ".img/mikuceon" ,
+    "sprite": "img/mikuceon.png" ,
     "tipo": "ice / normal"
 } , 
  
 {
-    "sprite": ".img/ursaspring" ,
+    "sprite": "img/ursaspring.png" ,
     "tipo": "dark / steel"
 }  ,
 
 {
-    "sprite": ".img/omarith" ,
+    "sprite": "img/omarith.png" ,
     "tipo": "rock / bug"
 } , 
  
 {
-    "sprite": ".img/pupxur" ,
+    "sprite": "img/pupxure.png" ,
     "tipo": "rock / dragon"
 }  ,
 
 {
-    "sprite": ".img/rookided" ,
+    "sprite": "img/rookided.png" ,
     "tipo": "flying / normal"
 } , 
  
 {
-    "sprite": ".img/sandiles" ,
+    "sprite": "img/sandiles.png" ,
     "tipo": "ground / dark"
 }  ,
 
 {
-    "sprite": ".img/scarysolt" ,
+    "sprite": "img/scaryzolt.png" ,
     "tipo": "ghost / rock"
 } , 
  
 {
-    "sprite": ".img/stargoro" ,
+    "sprite": "img/stargoro.png" ,
     "tipo": "ghost / fighting"
 }  ,
 
 {
-    "sprite": ".img/sunflower" ,
+    "sprite": "img/sunflower.png" ,
     "tipo": "grass"
 } , 
  
 {
-    "sprite": ".img/tyraxorus" ,
+    "sprite": "img/tyraxorus.png" ,
     "tipo": "dark / dragon"
 }  ,
 
 {
-    "sprite": ".img/urosaur" ,
+    "sprite": "img/urosaur.png" ,
     "tipo": "grass / dark"
 } , 
  
 {
-    "sprite": ".img/watermeleon" ,
+    "sprite": "img/watermeleon.png" ,
     "tipo": "water"
 }  ,
 
 {
-    "sprite": ".img/yamarionette" ,
+    "sprite": "img/yamarionette.png" ,
     "tipo": "ghost"
 } , 
  
 {
-    "sprite": ".img/kinturne" ,
+    "sprite": "img/kinturne.png" ,
     "tipo": "grass / fire"
 }  ,
 
 {
-    "sprite": ".img/flamingo" ,
+    "sprite": "img/flamingo.png" ,
     "tipo": "flying / fighting"
 } , 
  
 {
-    "sprite": ".img/pikocho" ,
+    "sprite": "img/pikocho.png" ,
     "tipo": "ghost"
 }  ,
-
-{
-    "sprite": ".img/digital rotom" ,
-    "tipo": "electric / steel"
-} , 
  
 {
-    "sprite": ".img/hisari" ,
+    "sprite": "img/hisari.png" ,
     "tipo": "ghost / dark"
 } ,
 
 {
-    "sprite": ".img/mineko" ,
+    "sprite": "img/mineko.png" ,
     "tipo": "normal"
+} ,
+
+{
+    "sprite": "img/wuper.png" , 
+    "tipo": "water / ground"
 } 
+
+
 
 ]
