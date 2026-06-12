@@ -128,8 +128,11 @@
 {
     "sprite": "img/wuper.png" , 
     "tipo": "water / ground"
+} ,
+
+{
+    "sprite": "img/glaster.png" , 
+    "tipo": "ice / psychic"
 } 
-
-
 
 ]
