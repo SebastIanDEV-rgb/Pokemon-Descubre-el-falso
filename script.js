@@ -22,7 +22,7 @@ document.addEventListener('DOMContentLoaded', () => {
             const respuesta = await fetch('fakemons.json');
             fakemons = await respuesta.json();
         } catch (error) {
-            console.error("Error al cargar Fakemons, iniciando solo con reales:", error);
+            console.error("Error al cargar Fakemons, iniciando solo con reales", error);
         }
     }
 
@@ -68,7 +68,7 @@ const iniciarSiguienteTurno = () => {
                 img.alt = pokemon.name || 'Pokemon';
             } else {
                 img.src = '';
-                img.alt = 'Sprite no disponible :,u';
+                img.alt = 'Sprite no disponible';
             }
         }
         
@@ -85,12 +85,12 @@ const iniciarSiguienteTurno = () => {
 
         fetch(url)
             .then(response => {
-                if (!response.ok) throw new Error('salio mal :v');
+                if (!response.ok) throw new Error('salio mal');
                 return response.json();
             })
             .then(renderPokemon)
             .catch(error => {
-                console.error('Error al cargar Pokémon :v', error);
+                console.error('Error al cargar Pokémon', error);
                 iniciarSiguienteTurno();
             });
     };
