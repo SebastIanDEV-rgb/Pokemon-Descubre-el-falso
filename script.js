@@ -59,7 +59,6 @@ const iniciarSiguienteTurno = () => {
     };
     const renderPokemon = pokemon => {
         const sprite = pokemon.sprites?.front_default;
-        const name = pokemon.name || 'Desconocido';
         const types = pokemon.types?.map(typeInfo => typeInfo.type.name) || [];
 
         if (img) {
